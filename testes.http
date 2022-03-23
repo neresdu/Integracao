@@ -1,0 +1,25 @@
+POST http://localhost:3333/produto/criar
+content-type: application/json
+
+{
+    "nome": "Coxinha1",
+    "descricao": "aaaaaaaaaaaaaaaaaaaa",
+    "quantidade": 50,
+    "preco": 29.90
+}
+################################
+GET http://localhost:3333/produto/listar
+################################
+
+DELETE  http://localhost:3333/produto/deletar/Coxinha
+
+################################
+PUT http://localhost:3333/produto/alterar
+content-type: application/json
+
+{
+    "nome": "Coxinha",
+    "descricao": "agora ta alterado",
+    "quantidade": 1,
+    "preco": 9.90
+}
